@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viktorina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .answer {
+            display: block;
+            margin: 5px 0;
+        }
+        .submit-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Viktorina</h1>
+    
+    <form id="quiz-form">
+        <div class="question">
+            <label for="q1">1. O‘zbekistonning poytaxti qaysi shahar?</label><br>
+            <input type="radio" id="q1a1" name="q1" value="Toshkent"> Toshkent<br>
+            <input type="radio" id="q1a2" name="q1" value="Samarkand"> Samarkand<br>
+            <input type="radio" id="q1a3" name="q1" value="Buxoro"> Buxoro<br>
+        </div>
+
+        <div class="question">
+            <label for="q2">2. Dunyoning eng katta okeani qaysi?</label><br>
+            <input type="radio" id="q2a1" name="q2" value="Tinch okean"> Tinch okean<br>
+            <input type="radio" id="q2a2" name="q2" value="Atlantika okeani"> Atlantika okeani<br>
+            <input type="radio" id="q2a3" name="q2" value="Hind okeani"> Hind okeani<br>
+        </div>
+
+        <div class="question">
+            <label for="q3">3. O‘zbekistonning mustaqillik sanasi qanday?</label><br>
+            <input type="radio" id="q3a1" name="q3" value="1991-yil 31-avgust"> 1991-yil 31-avgust<br>
+            <input type="radio" id="q3a2" name="q3" value="1992 yil 15 dekabr"> 1992 yil 15 dekabr<br>
+            <input type="radio" id="q3a3" name="q3" value="1989 yil 24 noyabr"> 1989 yil 24 noyabr<br>
+        </div>
+        <button type="button" class="submit-button" onclick="checkAnswers()">Javoblarni tekshirish</button>
+    </form>
+
+    <div id="result" class="result"></div>
+
+</body>
+</html>
