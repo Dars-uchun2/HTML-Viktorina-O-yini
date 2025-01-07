@@ -6,6 +6,15 @@
     <title>Viktorina</title>
     <style>
         body {
+            background: #a294e2;
+            Color: rgb(54, 53, 80);
+        }
+        footer {
+            color : black ;
+        }
+    </style>
+    <style>
+        body {
             font-family: Arial, sans-serif;
             margin: 20px;
         }
@@ -27,7 +36,7 @@
             cursor: pointer;
         }
         .submit-button:hover {
-            
+        
         }
         .result {
             margin-top: 20px;
@@ -54,16 +63,14 @@
             <input type="radio" id="q2a2" name="q2" value="Atlantika okeani"> Atlantika okeani<br>
             <input type="radio" id="q2a3" name="q2" value="Hind okeani"> Hind okeani<br>
         </div>
-
         <div class="question">
             <label for="q3">3. O‘zbekistonning mustaqillik sanasi qanday?</label><br>
             <input type="radio" id="q3a1" name="q3" value="1991-yil 31-avgust"> 1991-yil 31-avgust<br>
             <input type="radio" id="q3a2" name="q3" value="1992 yil 15 dekabr"> 1992 yil 15 dekabr<br>
             <input type="radio" id="q3a3" name="q3" value="1989 yil 24 noyabr"> 1989 yil 24 noyabr<br>
         </div>
-        <button type="button" class="submit-button" onclick="checkAnswers()">Javoblarni tekshirish</button>
+        <button>Javoblarni tekshirish</button>
     </form>
-
     <div id="result" class="result"></div>
 
 </body>
